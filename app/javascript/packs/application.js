@@ -13,3 +13,9 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+
+import { initSelect2 } from "../components/initSelect2";
+
+document.addEventListener('turbolinks:load', () => {
+  initSelect2();
+})
